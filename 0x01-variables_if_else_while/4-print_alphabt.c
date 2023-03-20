@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - Entry point
  * except q and e
@@ -9,10 +10,12 @@ int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'z'; ++c)
-		if (c != 'e' && c != 'z')
+	for (c = 'a'; c <= 'z'; c++)
+		if (c != 'e' && c != 'q')
 			putchar(c);
 		else
+		{
+		}
 	putchar('\n');
 	return (0);
 }
