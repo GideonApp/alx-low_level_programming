@@ -9,7 +9,7 @@ int _abs(int i)
 {
 	if (i < 0)
 	{
-		n = -n
+		i = -i
 	}
-	return (n)
+	return (i)
 }
