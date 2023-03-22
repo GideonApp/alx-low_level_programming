@@ -2,14 +2,14 @@
 
 /**
  * _islower - if c lowercase 0 and 1 otherwise
- * c - int
+ * @c: intiger
  * Return: 1 and 0 depending on condition
  */
 
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (0);
-	if (c >= 'A' && c <= 'Z')
 		return (1);
-i}
+	else
+		return (0);
+}
