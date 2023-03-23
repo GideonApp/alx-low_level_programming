@@ -5,11 +5,10 @@
 void times_table(void)
 {
 	int col, n;
-	int row = 0;
+	int row;
 
-	while (row < 10)
+	for (row = 0; row < 10; row++)
 	{
-		row++;
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
