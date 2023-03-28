@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_ array - print element of an array f.f by a comma and space
+ * print_array - a function that prints n elements
  * @a: parameter
  * @n: parameter
  */
@@ -13,10 +13,11 @@ void print_array(int *a, int n)
 	for (i = 0; i < n; i++)
 		if (i == (n - 1))
 		{
-			printf("%d\n", a[i]);
+			printf("%d", a[i]);
 		}
 		else
 		{
 			printf("%d, ", a[i]);
 		}
+	printf("\n");
 }
