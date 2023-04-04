@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * _strstr - compare 2 string and print similarities
@@ -12,7 +12,7 @@ char *_strstr(char *haystack, char *needle)
 	char *s1 = haystack;
 	char *s2 = needle;
 
-	for (; *haystack != '\0'; hayback++)
+	for (; *haystack != '\0'; haystack++)
 	{
 		while(*s1 == *s2 && *s2 != '\0')
 		{
@@ -21,7 +21,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*s2 == '\0')
 		{
-			return (hayback);
+			return (haystack);
 		}
 	}
 	return (0);
