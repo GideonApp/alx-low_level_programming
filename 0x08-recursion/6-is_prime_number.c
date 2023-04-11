@@ -1,5 +1,6 @@
 #include "main.h"
 
+int prime2(int n, int i);
 /**
  * is_prime_number - determine whether a numberis prime or not
  * @n: parameter
