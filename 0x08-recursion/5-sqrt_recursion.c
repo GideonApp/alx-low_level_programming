@@ -33,4 +33,5 @@ int sqrtpart(int n, int i)
 	{
 		return (i);
 	}
-	return(sqrtpart(n, i + 1);
+	return(sqrtpart(n, i + 1));
+}
