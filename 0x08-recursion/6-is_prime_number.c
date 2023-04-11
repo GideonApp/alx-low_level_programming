@@ -5,7 +5,6 @@
  * @n: parameter
  * Return: 1 or 0
  */
-
 int is_prime_number(int n)
 {
 	int i = n - 1;
