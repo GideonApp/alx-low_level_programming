@@ -1,6 +1,7 @@
 #include "main.h"
 
-int helperfunc(char *s, int len);
+int helperfunc(char *s, int i, int len);
+int is_palindrome(char *s);
 
 /**
  * length - determines the length of a string
