@@ -6,13 +6,13 @@ int sqrtpart(int n, int i);
  * @n: parameter
  * Return: always the square root
  */
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
 		return (-1);
 	}
+	return (sqrtpart(n, 0));
 }
 /**
  * sqrtpart - it does the actual square root
@@ -20,7 +20,6 @@ int _sqrt_recursion(int n)
  * @i: parameter
  * Return: the square root
  */
-
 int sqrtpart(int n, int i)
 {
 	if (i * i > n)
@@ -31,5 +30,5 @@ int sqrtpart(int n, int i)
 	{
 		return (i);
 	}
-	return(sqrtpart(n, i + 1));
+	return (sqrtpart(n, i + 1));
 }
