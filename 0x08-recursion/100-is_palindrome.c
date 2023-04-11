@@ -1,5 +1,7 @@
 #include "main.h"
 
+int helperfunc(char *s, int len);
+
 /**
  * is_palindrome - determines whether a string is a palindrome or not
  * @s: string
