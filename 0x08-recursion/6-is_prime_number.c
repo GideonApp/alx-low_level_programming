@@ -7,24 +7,29 @@
  */
 int is_prime_number(int n)
 {
-	int i = n - 1;
+	int i = n / 2;
 
-	if (i <= 1)
+	if (n <= 1)
 	{
 		return (0);
 	}
-	if (n <= 0)
-	{
-		return (0);
-	}
-	if (!(n % i == 0 && i > 0))
+	return (prime2(n, i));
+}
+/**
+ * prime2 - helper
+ * @n: parameter
+ * @i: parameter
+ * Return: parameter
+ */
+int prime2(int n, int i)
+{
+	if (i == 1)
 	{
 		return (1);
 	}
-	if (n % i == 0 && i > 0)
+	if (n % i == 0)
 	{
 		return (0);
 	}
-	i--;
-	i -= is_prime_number(n);
+	return (prime2(n, i - 1));
 }
