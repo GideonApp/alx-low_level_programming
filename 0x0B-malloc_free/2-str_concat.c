@@ -25,9 +25,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		str[k] = s1[k];
 	}
-	for (l = 0; s2[l] != '\0'; l++; k++)
+	for (l = 0; s2[l] != '\0'; l++)
 	{
 		str[k] = s2[l];
+		k++;
 	}
 	if (str == NULL)
 	{
