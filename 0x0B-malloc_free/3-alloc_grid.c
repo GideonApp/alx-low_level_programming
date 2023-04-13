@@ -3,7 +3,7 @@
 /**
  * alloc_grid - allocate a two dimensional
  * @width: 1st parameter
- * @hight: 2nd parameter
+ * @height: 2nd parameter
  * Return: NULL on failure
  */
 
