@@ -17,9 +17,13 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < (max - min + 1); i++; min++)
+	if (str == NULL)
 	{
-		str[i] = min;
+		return (NULL);
+	}
+	for (i = 0; min <= max; i++)
+	{
+		str[i] = min++;
 	}
 	return (str);
 }
